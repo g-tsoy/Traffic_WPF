@@ -25,8 +25,9 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
         User logUser;
-        AuthorizedUsers registredUsers;
-        GetListOfStation registredStations;
+        IRepository<User> registredUsers;
+       // AuthorizedUsers registredUsers;
+        IRepository<Station> registredStations;
 
         public MainWindow()
         {
@@ -74,9 +75,9 @@ namespace WpfApp1
                 //logUser.Password = PasswordBox.Text;
             }
 
-            logUser = registredUsers.Contain(logUser, registredUsers.Users);
+            logUser = registredUsers.Contain(logUser, registredUsers.Items);
 
-            if (registredUsers.Contain(logUser, registredUsers.Users) != null)
+            if (registredUsers.Contain(logUser, registredUsers.Items) != null)
             {
                 ListOfStation window = new ListOfStation(logUser, registredUsers, registredStations);
                 this.Close();
@@ -94,7 +95,7 @@ namespace WpfApp1
 
         void DataWindow_Closing(object sender, CancelEventArgs e)
         {
-            SaveData();
+           // SaveData();
                 string msg = "Data is dirty. Close without saving?";
                 MessageBoxResult result =
                   MessageBox.Show(

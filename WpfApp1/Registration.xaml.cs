@@ -24,9 +24,9 @@ namespace WpfApp1
     public partial class Registration : Window
     {
         User user;
-        AuthorizedUsers usersFromFile;
+        IRepository<User> usersFromFile;
 
-        public Registration(AuthorizedUsers users)
+        public Registration(IRepository<User> users)
         {
             InitializeComponent();
 
@@ -61,7 +61,7 @@ namespace WpfApp1
                 user.Email = EmailBox.Text;//repeat in List Of stations
                 string eMail = user.Email;
 
-                foreach (User userInArray in usersFromFile.Users)
+                foreach (User userInArray in usersFromFile.Items)
                 {
                     if (eMail.Contains(userInArray.Email))
                     {
@@ -84,7 +84,7 @@ namespace WpfApp1
                 user.Password = hashPas;
             }
 
-            usersFromFile.Users.Add(user); //repeat with ad favourite stations -- interface for Add function
+            usersFromFile.Items.Add(user); //repeat with ad favourite stations -- interface for Add function
 
             SaveData(sender, e);
             //    MainWindow window = new MainWindow();
@@ -107,7 +107,7 @@ namespace WpfApp1
 
         void SaveData(object sender, RoutedEventArgs e)
         {
-            var serializedItems = JsonConvert.SerializeObject(usersFromFile.Users);
+            var serializedItems = JsonConvert.SerializeObject(usersFromFile.Items);
             File.WriteAllText("../../../registredUsers.json", serializedItems);
         }
     }

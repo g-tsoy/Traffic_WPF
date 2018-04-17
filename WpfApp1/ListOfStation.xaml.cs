@@ -12,24 +12,25 @@ namespace WpfApp1
     /// </summary>
     public partial class ListOfStation : Window
     {
-        GetListOfStation listOfStations = new GetListOfStation();
-        AuthorizedUsers usersFromFile;
+        IRepository<Station> listOfStations;
+        IRepository<User> usersFromFile;
         User thisUser;
         
-
-        public ListOfStation(User logUser, AuthorizedUsers users, GetListOfStation listFromFile)
+        public ListOfStation(User logUser, IRepository<User> users, IRepository<Station> listFromFile)
         {
             InitializeComponent();
-
-            listOfStations.StationsFromRoutes.Sort(delegate (Station st1, Station st2) // repeat вынести 
-            { return st1.Name.CompareTo(st2.Name); });
-
-            listBoxStations.ItemsSource = listOfStations.StationsFromRoutes;
-            listBoxFavouritesStations.ItemsSource = logUser.favouriteStation;
 
             thisUser = logUser;
             usersFromFile = users;
             listOfStations = listFromFile;
+
+            listOfStations.Items.Sort(delegate (Station st1, Station st2) // repeat вынести 
+            { return st1.Name.CompareTo(st2.Name); });
+
+            listBoxStations.ItemsSource = listOfStations.Items;
+            listBoxFavouritesStations.ItemsSource = logUser.favouriteStation;
+       
+
         }
 
         private void RenewItemSource(User logUser)
@@ -79,8 +80,9 @@ namespace WpfApp1
                         return;
                     }
                 }
-
-                int index = usersFromFile.Users.FindIndex(
+                
+                
+                int index = usersFromFile.Items.FindIndex(
                     delegate (User user)
                     {
                         return user.Email.Equals(thisUser.Email, StringComparison.Ordinal);
@@ -111,7 +113,7 @@ namespace WpfApp1
 
         void SaveData(object sender, RoutedEventArgs e)
         {
-            var serializedItems = JsonConvert.SerializeObject(usersFromFile.Users);
+            var serializedItems = JsonConvert.SerializeObject(usersFromFile.Items);
             File.WriteAllText("../../../registredUsers.json", serializedItems);
         }
     }
