@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
+        Closing="DataWindow_Closing" 
         Title="Registration" Height="150" Width="400">
     <Grid>
         <Grid.ColumnDefinitions>

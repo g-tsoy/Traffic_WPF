@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Windows;
 using TrafficLogic;
@@ -24,13 +25,12 @@ namespace WpfApp1
             usersFromFile = users;
             listOfStations = listFromFile;
 
-            listOfStations.Items.Sort(delegate (Station st1, Station st2) // repeat вынести 
-            { return st1.Name.CompareTo(st2.Name); });
+            //listOfStations.Items.Sort(delegate (Station st1, Station st2) // repeat вынести 
+            //{ return st1.Name.CompareTo(st2.Name); });
+            StaticMethods.SortList(listOfStations.Items);
 
             listBoxStations.ItemsSource = listOfStations.Items;
             listBoxFavouritesStations.ItemsSource = logUser.favouriteStation;
-       
-
         }
 
         private void RenewItemSource(User logUser)
@@ -49,13 +49,13 @@ namespace WpfApp1
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            SaveData(sender, e);
+            //SaveData(sender, e);
             Close();
 
             MainWindow window = new MainWindow();
             window.ShowDialog();
 
-            SaveData(sender, e);
+            //SaveData(sender, e);
         }
         
         private void Add_Click(object sender, RoutedEventArgs e)
@@ -67,7 +67,7 @@ namespace WpfApp1
             {
                 List<Station> fs = thisUser.favouriteStation;
 
-                if (fs == null) // repeaet Authorazed users
+                if (fs == null)
                 {
                     fs = new List<Station>();
                 }
@@ -80,8 +80,7 @@ namespace WpfApp1
                         return;
                     }
                 }
-                
-                
+
                 int index = usersFromFile.Items.FindIndex(
                     delegate (User user)
                     {
@@ -89,10 +88,10 @@ namespace WpfApp1
                     });
 
                usersFromFile = usersFromFile.AddFavouriteStation(selectedStation, index, usersFromFile);
-               
 
-               fs.Sort(delegate (Station st1, Station st2) // repeat
-               { return st1.Name.CompareTo(st2.Name); });
+                StaticMethods.SortList(fs);
+               //fs.Sort(delegate (Station st1, Station st2) // repeat
+               //{ return st1.Name.CompareTo(st2.Name); });
 
                 RenewItemSource(thisUser);
             }
@@ -110,11 +109,26 @@ namespace WpfApp1
            }
            RenewItemSource(thisUser);
         }
-
+        /*
         void SaveData(object sender, RoutedEventArgs e)
         {
             var serializedItems = JsonConvert.SerializeObject(usersFromFile.Items);
             File.WriteAllText("../../../registredUsers.json", serializedItems);
+        }*/
+        public void DataWindow_Closing(object sender, CancelEventArgs e)
+        {
+            StaticMethods.saveData(usersFromFile);
+            string m = "Leaving us? Are you sure?";
+            MessageBoxResult result =
+              MessageBox.Show(
+                m,
+                "Data App",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Warning);
+            if (result == MessageBoxResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

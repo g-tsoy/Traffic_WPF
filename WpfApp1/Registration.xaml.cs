@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
@@ -28,10 +29,10 @@ namespace WpfApp1
 
         public Registration(IRepository<User> users)
         {
-            InitializeComponent();
-
             user = new User();
             usersFromFile = users;
+
+            InitializeComponent();
 
             //RegistrationBtn.Click +=SaveData;
 
@@ -40,7 +41,6 @@ namespace WpfApp1
 
         public void Registration_Click(object sender, RoutedEventArgs e)//delegats
         {
-
             if (string.IsNullOrEmpty(FullNameBox.Text)) //repeat (TextBox)
             {
                 MessageBox.Show("Invalid name");
@@ -80,35 +80,41 @@ namespace WpfApp1
             }
             else
             {
-                string hashPas = GetHash(PasswordBox.Text);
+                string hashPas = StaticMethods.GetHashMethod(PasswordBox.Text);
                 user.Password = hashPas;
             }
 
             usersFromFile.Items.Add(user); //repeat with ad favourite stations -- interface for Add function
 
-            SaveData(sender, e);
+            //SaveData(sender, e);
             //    MainWindow window = new MainWindow();
 
             Close();
       //      window.ShowDialog();
         }
 
-        public static string GetHash(string password) // interface
+        private void DataWindow_Closing(object sender, CancelEventArgs e)
         {
-            var md5 = MD5.Create();
-            var hash = md5.ComputeHash(Encoding.UTF8.GetBytes(password));
-            return Convert.ToBase64String(hash);
+            StaticMethods.saveData(usersFromFile);
         }
+
+        /*
+public static string GetHash(string password) // interface
+{
+   var md5 = MD5.Create();
+   var hash = md5.ComputeHash(Encoding.UTF8.GetBytes(password));
+   return Convert.ToBase64String(hash);
+}*/
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
 
-        void SaveData(object sender, RoutedEventArgs e)
+      /*  void SaveData(object sender, RoutedEventArgs e)
         {
             var serializedItems = JsonConvert.SerializeObject(usersFromFile.Items);
             File.WriteAllText("../../../registredUsers.json", serializedItems);
-        }
+        }*/
     }
 }

@@ -25,6 +25,7 @@ namespace WpfApp1
             GetTheNearestBusByStation thisTimeToNextBus = new GetTheNearestBusByStation(station);
             InitializeComponent();
             listBoxStation.ItemsSource = station.Name;
+
             listBoxTimeToNextBus1.ItemsSource = thisTimeToNextBus.TimeToNextBus;
             listBoxTimeToNextBus2.ItemsSource = thisTimeToNextBus.TimeToNextBus;
             listBoxTimeToNextBus3.ItemsSource = thisTimeToNextBus.TimeToNextBus;
