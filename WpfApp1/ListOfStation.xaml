@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp1.ListOfStation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            <TabItem Header="List of Routes">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="31*"/>
+                        <ColumnDefinition Width="108*"/>
+                        <ColumnDefinition Width="246*"/>
+                        <ColumnDefinition Width="128*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <ListBox Margin="2,2,1.8,2" Name="listBoxStations" DisplayMemberPath="Name" Grid.ColumnSpan="3">
+                    </ListBox>
+                    <StackPanel Grid.Column="3" Margin="2.2,2,1.8,2">
+                        <Button Name="Get_Time" Content="GetTime" Margin="4 10 4 10" Click="Get_Click"/>
+                        <Button Name="Add" Content="Add to Favourites" Margin="4 5 4 10" Click="Add_Click"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Margin="2.2,2,1.8,2">
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Favourite stations">
+                <Grid HorizontalAlignment="Left" Margin="0,0,-0.2,-0.4" Width="513">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="19*"/>
+                        <ColumnDefinition Width="18*"/>
+                        <ColumnDefinition Width="347*"/>
+                        <ColumnDefinition Width="129*"/>
+                    </Grid.ColumnDefinitions>
+                    <ListBox Margin="2,2,1.8,1.4" Name="listBoxFavouritesStations" DisplayMemberPath="Name" Grid.ColumnSpan="4">
+                    </ListBox>
+                    <StackPanel Grid.Column="3" Margin="2,2,1.8,1.4">
+                        <Button Name="Get_Time_Favourites" Content="GetTime" Margin="4 10 4 10" Click="Get_Click"/>
+                        <Button Name="Delete" Content="Delete" Margin="4 5 4 10" Click="Delete_Click"/>
+                        <Button Name="Exit" Content="Exit" Margin="4 5 4 10" Click="Exit_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

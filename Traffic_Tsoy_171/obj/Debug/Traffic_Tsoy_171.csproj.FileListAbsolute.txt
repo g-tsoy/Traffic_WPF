@@ -1,0 +1,7 @@
+C:\Users\123\Documents\Бизнес-информатика\Программирование\Traffic_Tsoy_171\bin\Debug\Traffic_Tsoy_171.exe.config
+C:\Users\123\Documents\Бизнес-информатика\Программирование\Traffic_Tsoy_171\bin\Debug\Traffic_Tsoy_171.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\Traffic_Tsoy_171\bin\Debug\Traffic_Tsoy_171.pdb
+C:\Users\123\Documents\Бизнес-информатика\Программирование\Traffic_Tsoy_171\obj\Debug\Traffic_Tsoy_171.csproj.CoreCompileInputs.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\Traffic_Tsoy_171\obj\Debug\Traffic_Tsoy_171.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\Traffic_Tsoy_171\obj\Debug\Traffic_Tsoy_171.pdb
+C:\Users\123\Documents\Бизнес-информатика\Программирование\Traffic_Tsoy_171\obj\Debug\Traffic_Tsoy_171.csprojResolveAssemblyReference.cache

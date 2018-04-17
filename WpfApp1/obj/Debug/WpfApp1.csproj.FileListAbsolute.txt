@@ -1,0 +1,52 @@
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\ListOfStation.g.cs
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\App.g.cs
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\WpfApp1.csprojResolveAssemblyReference.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\bin\Debug\Traffic_Tsoy_171.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\bin\Debug\Traffic_Tsoy_171.pdb
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\bin\Debug\Traffic_Tsoy_171.exe.config
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\ListOfStation.baml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.Cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\GetTimeWindow.g.cs
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\GetTimeWindow.baml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\Registration.g.cs
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\obj\Debug\Registration.baml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\WpfApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\bin\Debug\Traffic_Tsoy_171.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\bin\Debug\Traffic_Tsoy_171.pdb
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\bin\Debug\Traffic_Tsoy_171.exe.config
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\WpfApp1.csprojResolveAssemblyReference.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\GetTimeWindow.g.cs
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\ListOfStation.g.cs
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\Registration.g.cs
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\App.g.cs
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\GetTimeWindow.baml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\ListOfStation.baml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\Registration.baml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.Cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\WpfApp1\obj\Debug\WpfApp1.pdb

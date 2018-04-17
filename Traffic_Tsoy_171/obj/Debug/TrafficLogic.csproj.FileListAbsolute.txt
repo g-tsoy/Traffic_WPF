@@ -1,0 +1,18 @@
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\Traffic_Tsoy_171\bin\Debug\Traffic_Tsoy_171.exe.config
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\Traffic_Tsoy_171\bin\Debug\Traffic_Tsoy_171.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\Traffic_Tsoy_171\bin\Debug\Traffic_Tsoy_171.pdb
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\Traffic_Tsoy_171\obj\Debug\TrafficLogic.csprojResolveAssemblyReference.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\Traffic_Tsoy_171\obj\Debug\TrafficLogic.csproj.CoreCompileInputs.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\Traffic_Tsoy_171\obj\Debug\Traffic_Tsoy_171.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\Traffic_Tsoy_171\obj\Debug\Traffic_Tsoy_171.pdb
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\Traffic_Tsoy_171\bin\Debug\Newtonsoft.Json.dll
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2\Traffic_Tsoy_171\bin\Debug\Newtonsoft.Json.xml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\Traffic_Tsoy_171\bin\Debug\Traffic_Tsoy_171.exe.config
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\Traffic_Tsoy_171\bin\Debug\Traffic_Tsoy_171.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\Traffic_Tsoy_171\bin\Debug\Traffic_Tsoy_171.pdb
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\Traffic_Tsoy_171\bin\Debug\Newtonsoft.Json.dll
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\Traffic_Tsoy_171\bin\Debug\Newtonsoft.Json.xml
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\Traffic_Tsoy_171\obj\Debug\TrafficLogic.csprojResolveAssemblyReference.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\Traffic_Tsoy_171\obj\Debug\TrafficLogic.csproj.CoreCompileInputs.cache
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\Traffic_Tsoy_171\obj\Debug\Traffic_Tsoy_171.exe
+C:\Users\123\Documents\Бизнес-информатика\Программирование\2 — копия\Traffic_Tsoy_171\obj\Debug\Traffic_Tsoy_171.pdb
